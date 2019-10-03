@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9</title>
+</head>
+<body>
+<script>
+    let i=1;
+    let j = 2 ;
+    let am = "<table border='1' width='600' cellspacing='0' cellpadding='2'>";
+    for (i;i<10;i++){
+        am = am + "<tr>";
+
+        for(j;j<10;j++){
+            let a= j*i;
+            am = am + "<td>"+j+' x '+i+' = ' +a+"</td>"
+           // document.write(j+' x '+i+' = ' +a + ' ')
+        }
+        am = am + "</tr>";
+        //document.write('<br />')
+        j=2 ;
+    }
+    am = am + "</table>";
+    document.write(am)
+</script>
+</body>
+</html>
